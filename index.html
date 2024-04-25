@@ -18,19 +18,20 @@
      <button id="button1" class="is-danger"  pys-onclick="clear">Clear</button>
      <button id="button2" class="is-primary"  pys-onclick="write">write</button>
      <h1 id="output">Output</h1>
+    
 </div>
 <py-script>
 #application logic
 input = document.getElementById("input")
 output = document.getElementById("output")
 
-def clear (*args):
+def clear(*args):
     input.value=''
-    
-def write (*args):
-    result = input.value 
-    console.log(result)
+
+def write(*args):       
+    result = input.value
     output.innerText = result
+
 </py-script>
 </body>
 
